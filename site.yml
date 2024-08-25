@@ -1,0 +1,9 @@
+---
+
+- hosts: web-servers
+  become: true
+  tasks:
+
+    - name: Print OS Info
+      package:
+        name: apache2
