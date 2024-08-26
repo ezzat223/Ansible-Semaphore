@@ -1,9 +1,10 @@
 ---
 
-- hosts: web-servers
+- hosts: db_servers
   become: true
   tasks:
 
-    - name: Print OS Info
+    - name: Install apache2
       package:
         name: apache2
+  
